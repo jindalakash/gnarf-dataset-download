@@ -1,0 +1,25 @@
+{
+  "name": "gnarf-dataset-download",
+  "version": "1.0.0",
+  "description": "Download the GNARF data set as a blank or filled Excel form, tab by tab, for one organisation unit",
+  "author": "Filoi Private Limited",
+  "license": "BSD-3-Clause",
+  "private": true,
+  "scripts": {
+    "build": "d2-app-scripts build",
+    "start": "d2-app-scripts start",
+    "test": "node --test \"test/**/*.test.js\"",
+    "release:patch": "npm version patch --no-git-tag-version && npm run build",
+    "release:minor": "npm version minor --no-git-tag-version && npm run build",
+    "release:major": "npm version major --no-git-tag-version && npm run build"
+  },
+  "devDependencies": {
+    "@dhis2/cli-app-scripts": "^12.11.9"
+  },
+  "dependencies": {
+    "@dhis2/app-runtime": "^3.17.6",
+    "@dhis2/ui": "^10.21.1",
+    "jspdf": "^3.0.4",
+    "jspdf-autotable": "^5.0.9"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+.d2/
+build/
+src/locales/
+.DS_Store
+*.log
